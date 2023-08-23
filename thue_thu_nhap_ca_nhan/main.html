@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thuế thu nhập cá nhân</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container rounded my-5 bg-info">
+      <h2 class="pt-3 text-center">Tính thuế thu nhập cá nhân</h2>
+      <div class="form-group">
+        <label class="badge badge-primary text-wrap" for="">HỌ VÀ TÊN</label>
+        <input
+          type="text"
+          class="form-control border-warning"
+          id="Name"
+          placeholder="Nhập tại đây"
+        />
+      </div>
+      <!--  -->
+      <div class="form-group">
+        <label class="badge badge-primary text-wrap" for=""
+          >TỔNG THU NHẬP NĂM</label
+        >
+        <input
+          type="number"
+          class="form-control border-warning"
+          id="yearSalary"
+          placeholder="Nhập tại đây - VD:10000000"
+        />
+      </div>
+      <div class="form-group">
+        <label class="badge badge-primary text-wrap" for=""
+          >SỐ NGƯỜI PHỤ THUỘC</label
+        >
+        <input
+          type="text"
+          class="form-control border-warning"
+          id="people"
+          placeholder="Nhập 0 nếu không có người phụ thuộc"
+        />
+      </div>
+      <div class="text-center">
+        <button id="btn_tinh" class="btn btn-lg btn-danger">TÍNH</button>
+      </div>
+
+      <div class="d-flex flex-column align-items-center py-3">
+        <h3 class="w-50 badge badge-danger badge-pill text-left py-3 my-3" for="">
+          Tổng thu nhập chịu thuế: <span id="thuNhapChiuThue"></span>
+        </h3>
+        <!--  -->
+        <h3 class="w-50 text-left badge badge-danger badge-pill py-3 my-3" for="">
+          Thuế thu nhập cá nhân: <span id="thuePhaiTra"></span>
+        </h3>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

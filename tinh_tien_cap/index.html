@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tính tiền cáp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="container my-5 bg-info text-center">
+      <h2 class="text-center">TÍNH TIỀN CÁP</h2>
+
+      <!--  -->
+       <div class="d-flex bd-highlight align-items-center">
+  <div class="p-2 flex-fill bd-highlight"> <select name="" id="typeCap" onchange="typeCap()" style="transform: translateY(4px);" class="py-2 w-100 text-center">
+            <option value="disable">Chọn loại khách hàng</option>
+            <option value="civilian">Nhà dân</option>
+            <option value="Bussiness">Doanh nghiệp</option>
+          </select></div>
+          <!-- 2 -->
+  <div class="p-2 flex-fill bd-highlight">
+    <div class="form-group">
+        <label for=""></label>
+        <input type="text" class="form-control" id="customerID" placeholder="Nhập mã khách hàng" />
+      </div></div>
+      <!-- 3 -->
+  <div class="p-2 flex-fill bd-highlight"><div class="form-group">
+        <label for=""></label>
+        <input type="number" class="form-control" id="kenhCaoCap" placeholder="Số kênh cao cấp" />
+      </div></div>
+       </div>
+       <!--  -->
+       <div id="anHien" class="form-group mx-auto w-25 my-1">
+             <label for=""></label>
+             <input type="number" class="form-control" id="cables" placeholder="Số kết nối" />
+           </div>
+
+      <!--  -->
+      <button id="btn_cap"  class="btn  btn-danger mt-3">TÍNH TIỀN</button>
+      <div id="inKetQua" class="alert py-4 mt-2 bg-success"></div>
+      
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
